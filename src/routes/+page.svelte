@@ -1,3 +1,4 @@
+
 <script>
     import { Html5Qrcode } from 'html5-qrcode'
     import { onMount } from 'svelte'
@@ -51,6 +52,7 @@
     reader {
         width: 100%;
         min-height: 500px;
+        margin-top: 5%;
         background-color: black;
     }
 </style>
@@ -58,8 +60,8 @@
 <main>
     <reader id="reader"></reader>
     {#if scanning}
-        <button on:click={stop}>stop</button>
+        <button class="w-80 h-15 bg-blue-300 p-8" on:click={stop}>stop</button>
     {:else}
-        <button on:click={start}>start</button>
+        <button on:click={start} class="w-80 h-15 bg-blue-300">start</button>
     {/if}
 </main>
