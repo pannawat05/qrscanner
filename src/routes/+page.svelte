@@ -60,8 +60,8 @@
 <main>
     <reader id="reader"></reader>
     {#if scanning}
-        <button class="w-80 h-15 bg-blue-300 p-8" on:click={stop}>stop</button>
+        <button class="w-80 h-15 bg-blue-300" on:click={stop}>stop</button>
     {:else}
-        <button on:click={start} class="w-80 h-15 bg-blue-300 p-8">start</button>
+        <button on:click={start} class="w-80 h-15 bg-blue-300">start</button>
     {/if}
 </main>
