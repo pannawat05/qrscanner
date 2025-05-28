@@ -50,8 +50,8 @@
         gap: 20px;
     }
     reader {
-        width: 50%;
-        min-height: 400px;
+        width: 100%;
+        min-height: 500px;
         margin-top: 5%;
         background-color: black;
     }
