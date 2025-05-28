@@ -62,6 +62,6 @@
     {#if scanning}
         <button class="w-80 h-15 bg-blue-300 p-8" on:click={stop}>stop</button>
     {:else}
-        <button on:click={start} class="w-80 h-15 bg-blue-300">start</button>
+        <button on:click={start} class="w-80 h-15 bg-blue-300 p-8">start</button>
     {/if}
 </main>
